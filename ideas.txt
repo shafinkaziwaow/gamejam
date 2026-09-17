@@ -1,0 +1,4 @@
+idea 1:
+- roguelike bullet hell
+- go to different houses and complete a bullet hell level to receive "treats"
+- use treats to purchase upgrades and such
