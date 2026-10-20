@@ -1,14 +1,23 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792380676
-::res://assets/::1792380661
+::res://::1792528986
+::res://assets/::1792529107
+candy.png::CompressedTexture2D::9053359408677583062::1792526836::1792526864::1::::<><><>0<>0<>91acc8caa45791cc9cf19ade3e08e70c<>res://.godot/imported/candy.png-c5b61a3073f4dc7b333ea04ce891b54e.ctex::
+character.png::CompressedTexture2D::231024919819715354::1792451987::1792451994::1::::<><><>0<>0<>c13da727b1a2e20ba39f48033836082d<>res://.godot/imported/character.png-7d161e056639ffa8fae932e906cc0673.ctex::
 icon.svg::CompressedTexture2D::8346630660360820991::1790484659::1792380661::1::::<><><>0<>0<>15f92569a29d1a4f33e4967581659ef8<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
-::res://scenes/::1792381217
+pixil-frame-0 (8).png::CompressedTexture2D::3409965805567355643::1792529054::1792529055::1::::<><><>0<>0<>212e1c54d823dee9726f2bb9b4bff13b<>res://.godot/imported/pixil-frame-0 (8).png-fc87650a64708ce2fb8fabe511d5c8a3.ctex::
+pixil-frame-0 (9).png::CompressedTexture2D::8354620548916555104::1792529107::1792529108::1::::<><><>0<>0<>dcf0ffa1148681b7fa92ff3d56c0fe79<>res://.godot/imported/pixil-frame-0 (9).png-7799fca6992a6dec9d8e48905511d12e.ctex::
+stage.png::CompressedTexture2D::5170317599845616539::1792528978::1792528986::1::::<><><>0<>0<>a375c1d3016d3cea3dbeb2d0853200a6<>res://.godot/imported/stage.png-bbe92d288bd59e6cea56e632b5294215.ctex::
+tokens.png::CompressedTexture2D::2908372484596902636::1792526836::1792526855::1::::<><><>0<>0<>55bf2f1849141e0aae3c5de762765128<>res://.godot/imported/tokens.png-8f2223a1cef009be7c093fa82270e871.ctex::
+::res://scenes/::1792528333
+character.tscn::PackedScene::2059913175160659465::1792452108::0::1::::<><><>0<>0<><>::uid://c0xrmlpqgwaky::::res://scripts/character.gd<>uid://dj57gmftutgs::::res://assets/character.png
+game.tscn::PackedScene::5184743337483607713::1792451446::0::1::::<><><>0<>0<><>::uid://4l3p7hcd8n2h::::res://scenes/character.tscn<>uid://dq6f11mu3xalr::::res://assets/icon.svg
 map.tscn::PackedScene::4763147667600133429::1792381192::0::1::::<><><>0<>0<><>::
-game.tscn::PackedScene::5184743337483607713::1792381205::0::1::::<><><>0<>0<><>::
-menu.tscn::PackedScene::5802139178738750161::1792381217::0::1::::<><><>0<>0<><>::
+menu.tscn::PackedScene::5802139178738750161::1792387937::0::1::::<><><>0<>0<><>::
 shop.tscn::PackedScene::9072909650333856069::1792381198::0::1::::<><><>0<>0<><>::
 start.tscn::PackedScene::7780583313582124314::1792380706::0::1::::<><><>0<>0<><>::
-::res://scripts/::1792380676
+ui.tscn::PackedScene::6964974509076311385::1792528333::0::1::::<><><>0<>0<><>::uid://d18rrh2ilr1ss::::res://assets/candy.png<>uid://bho3p8hb80aye::::res://assets/tokens.png
+::res://scripts/::1792528333
+character.gd::GDScript::6576097366749042876::1792452108::0::1::::<>CharacterBody2D<><>0<>0<><>::
+global.gd::GDScript::3463143985689953890::1792528333::0::1::::<>Node<><>0<>0<><>::
 ideas.txt::TextFile::-1::1790484659::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1790484659::0::1::::<><><>0<>0<><>::
-global.gd::GDScript::3463143985689953890::1792381874::0::1::::<>Node<><>0<>0<><>::

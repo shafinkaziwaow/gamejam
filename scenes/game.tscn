@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://cf4r7235hdjun"]
 
+[ext_resource type="PackedScene" uid="uid://4l3p7hcd8n2h" path="res://scenes/character.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://cfwsm1by5vhm6" path="res://assets/stage.png" id="2_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://dq6f11mu3xalr" path="res://assets/icon.svg" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://c6h5d3en8fapd" path="res://scenes/ui.tscn" id="4_iywne"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yqjtg"]
+a = Vector2(-250, -300)
+b = Vector2(250, -300)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_lnu2h"]
+a = Vector2(250, -300)
+b = Vector2(250, 300)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_lbhrr"]
+a = Vector2(250, 300)
+b = Vector2(-250, 300)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_iywne"]
+a = Vector2(-250, 300)
+b = Vector2(-250, -300)
+
 [node name="Game" type="Node2D" unique_id=566124204]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1300310419]
+z_index = -1
+position = Vector2(3.4999733, 2.5000153)
+scale = Vector2(9.0078125, 5.0546875)
+texture = ExtResource("2_yqjtg")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=129647281]
+
+[node name="Stage" type="StaticBody2D" parent="." unique_id=1655070699]
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage" unique_id=1545908993]
+position = Vector2(-0.49999237, 1.000001)
+texture = ExtResource("2_lbhrr")
+
+[node name="Top" type="CollisionShape2D" parent="Stage" unique_id=789353130]
+position = Vector2(0, 4)
+shape = SubResource("SegmentShape2D_yqjtg")
+
+[node name="Right" type="CollisionShape2D" parent="Stage" unique_id=1729997198]
+position = Vector2(-4, 0)
+shape = SubResource("SegmentShape2D_lnu2h")
+
+[node name="Bottom" type="CollisionShape2D" parent="Stage" unique_id=1274561301]
+position = Vector2(0, -4)
+shape = SubResource("SegmentShape2D_lbhrr")
+
+[node name="Left" type="CollisionShape2D" parent="Stage" unique_id=1205166370]
+position = Vector2(4, 0)
+shape = SubResource("SegmentShape2D_iywne")
+
+[node name="Character" parent="." unique_id=307982276 instance=ExtResource("1_uwrxv")]
+
+[node name="Ui" parent="." unique_id=1753928727 instance=ExtResource("4_iywne")]
+position = Vector2(162, -235)
+
+[node name="Health" type="TextureProgressBar" parent="." unique_id=22279084]
+offset_right = 40.0
+offset_bottom = 40.0
